@@ -1,0 +1,10 @@
+{
+  "name": "noteapp",
+  "short_name": "noteapp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Minimal notes that stay out of your way.",
+  "icons": []
+}

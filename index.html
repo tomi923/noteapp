@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>noteapp</title>
+    <meta name="theme-color" content="#0b0b0b" />
+    <meta name="description" content="Minimal notes that stay out of your way." />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app" data-theme="dark">
+      <header class="topbar">
+        <div class="note-count" id="note-count">0 notes</div>
+        <div class="actions">
+          <button class="action" id="theme-toggle" type="button">[o]</button>
+          <button class="action" id="new-note" type="button">[+]</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="list" id="note-list" aria-label="Notes"></section>
+        <section class="editor" aria-label="Editor">
+          <div class="status" id="status">saved</div>
+          <textarea
+            id="note-editor"
+            placeholder="start typing..."
+            autocomplete="off"
+            autocapitalize="sentences"
+            spellcheck="true"
+          ></textarea>
+          <div class="center-action" id="center-action">
+            <button class="action center" id="center-plus" type="button">[+]</button>
+          </div>
+          <p class="footnote" id="footnote">
+            saves to this device, including android (offline, on-device storage).
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
